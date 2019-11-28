@@ -18,6 +18,8 @@
     margin: 0
     font-size: 39px
     +bold
+  &__button
+    display: none
 @media (max-width: 1199.98px)
   .hero
     padding-top: 90px
@@ -27,6 +29,14 @@
   .hero
     &::before
       width: 70%
+@media (max-width: 767.98px)
+  .hero
+    &-wrap
+      flex-direction: column
+    &__button
+      display: block
+    &__title
+      margin-bottom: 44px
 @media (max-width: 575.98px)
   .hero
     &::before
