@@ -1,0 +1,19 @@
+.hero
+  position: relative
+  padding-top: 143px
+  &::before
+    content: ''
+    position: absolute
+    top: 0
+    right: 0
+    z-index: -1
+    width: 50%
+    height: 642px
+    background-color: rgba(#ececec, .3)
+  &-wrap
+    display: flex
+    justify-content: center
+  &-title
+    margin: 0
+    font-size: 39px
+    +bold

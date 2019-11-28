@@ -1,0 +1,41 @@
+.nav
+  position: fixed
+  top: 261px
+  left: 0
+  &-menu
+    padding: 0
+    margin: 0
+    list-style: none
+    &__item
+      position: relative
+    &__link
+      display: block
+      padding-top: 10px
+      padding-bottom: 10px
+      padding-right: 100px
+      font-size: 13px
+      color: $color-menu
+      text-decoration: none
+      +light
+      &::before
+        content: ''
+        position: absolute
+        top: 50%
+        left: -50px
+        transform: translateX(-50%)
+        width: 33px
+        height: 1px
+        background-color: $color-text
+        transform: scale(0)
+        transition: all .2s
+      &:hover
+        color: $color-text
+        +reg
+        &::before
+          transform: scale(1)
+@media (max-width: 767.98px)
+  .nav
+    display: none
+
+        
+

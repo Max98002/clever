@@ -1,0 +1,45 @@
+.header
+  display: flex
+  justify-content: space-between
+  align-items: center
+  padding-top: 30px
+  padding-bottom: 30px
+  &-btn
+    display: none
+    padding: 5px 0
+    cursor: pointer
+    &__line
+      display: block
+      margin-bottom: 7px
+      width: 14px
+      height: 1px
+      background-color: $color-text
+      &::after
+       content: ''
+       display: block
+       transform: translateY(7px)
+       width: 50%
+       height: 1px
+       background-color: $color-text 
+  &__logo
+    width: 150px
+  &-block
+    &__brif
+      margin-right: 20px
+      font-size: 13px
+      color: $color-text
+      border: 1px solid #ececec
+      background-color: transparent
+    &__contactUs
+      font-size: 13px
+      color: $color-white
+      border: none
+@media (max-width: 767.98px)
+  .header
+    &-btn
+      display: block
+    &__logo
+      width: 100px
+    &-block
+      display: none
+    
