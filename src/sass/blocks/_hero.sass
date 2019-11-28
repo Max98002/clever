@@ -1,6 +1,7 @@
 .hero
   position: relative
-  padding-top: 143px
+  padding-top: 140px
+  padding-bottom: 140px
   &::before
     content: ''
     position: absolute
@@ -17,3 +18,18 @@
     margin: 0
     font-size: 39px
     +bold
+@media (max-width: 1199.98px)
+  .hero
+    padding-top: 90px
+    &-title
+      font-size: 35px
+@media (max-width: 991.98px)
+  .hero
+    &::before
+      width: 70%
+@media (max-width: 575.98px)
+  .hero
+    &::before
+      width: 80%
+    &-title
+      font-size: 25px
