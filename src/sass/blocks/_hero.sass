@@ -8,12 +8,12 @@
     top: 0
     right: 0
     z-index: -1
-    width: 50%
+    width: 60%
     height: 642px
     background-color: rgba(#ececec, .3)
   &-wrap
-    display: flex
-    justify-content: center
+    max-width: 73%
+    margin-left: auto
   &-title
     margin: 0
     font-size: 39px
@@ -23,6 +23,7 @@
 @media (max-width: 1199.98px)
   .hero
     padding-top: 90px
+    padding-bottom: 90px
     &-title
       font-size: 35px
 @media (max-width: 991.98px)
@@ -33,6 +34,7 @@
   .hero
     &-wrap
       flex-direction: column
+      margin-left: 0
     &__button
       display: block
     &__title

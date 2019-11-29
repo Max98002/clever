@@ -23,3 +23,15 @@ body
   background-color: $color-green
   &:hover
     cursor: pointer
+.section
+  &-title
+    font-size: 25px
+    +bold
+@media (max-width: 575.98px)
+  .section
+    &-title
+      font-size: 20px
+
+@mixin width()
+  max-width: 73%
+  margin-left: auto

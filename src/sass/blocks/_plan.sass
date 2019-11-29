@@ -1,0 +1,41 @@
+.plan
+  &__title
+    +width
+    margin-bottom: 50px
+  &-wrap
+    +width
+  &-row
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding-bottom: 30px
+    padding-right: 19px
+    margin-bottom: 30px
+    border-bottom: 1px solid #ececec
+    &:last-child
+      border-bottom: none
+    &__number
+      +light
+      color: $color-menu
+      font-size: 25px
+@media (max-width: 767.98px)
+  .plan
+    &__title
+      max-width: 100%
+    &-wrap
+      max-width: 100%
+@media (max-width: 575.98px)
+  .plan
+    padding-right: 0
+    &-row
+      padding-bottom: 20px
+      margin-bottom: 30px
+      align-items: flex-start
+      &:last-child
+        margin-bottom: 0
+      &__text
+        font-size: 11px
+        margin-bottom: 25px
+      &__number
+        font-size: 20px
+        padding-left: 40px
