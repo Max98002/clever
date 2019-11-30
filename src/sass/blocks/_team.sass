@@ -1,0 +1,80 @@
+.team
+  margin-bottom: 260px
+  &-wrap
+    position: relative
+    +width
+  &-card
+    display: flex
+    justify-content: flex-start
+    align-items: flex-start
+    &__image
+      min-width: 219px
+      margin-right: 50px
+      &_l
+        display: block
+      &_s
+        display: none
+    &__title
+      margin: 0
+      margin-bottom: 6px
+      font-size: 25px
+      +bold
+    &__subtitle
+      display: block
+      margin-bottom: 40px
+      font-size: 16px
+      color: $color-menu
+    &__text
+      margin-bottom: 20px
+      max-width: 570px
+      font-size: 16px
+    &__play
+      margin-right: 12px
+    &__videoReviews
+      display: flex
+      align-items: center
+      font-size: 13px
+      color: $color-green
+      text-decoration: none
+  &-arrow
+    display: flex
+    position: absolute
+    bottom: 0
+    right: 0
+    &__left
+      cursor: pointer
+      margin-right: 50px
+      transform: rotate(180deg)
+      img
+        display: block
+    &__right
+      cursor: pointer
+      img
+        display: block
+@media (max-width: 1199.98px)
+  .team
+    &-card
+      &__image
+        margin-right: 20px
+      &__subtitle
+        margin-bottom: 20px
+      &__text
+        font-size: 14px
+@media (max-width: 991.98px)
+  .team
+    &-card
+      flex-direction: column
+      &__image
+        margin-bottom: 20px
+        margin-right: 0
+        width: 100%
+        &_l
+          display: none
+        &_s
+          display: block
+          width: 100%
+@media (max-width: 767.98px)
+  .team
+    &-wrap
+      max-width: 100%
+      margin-left: 0

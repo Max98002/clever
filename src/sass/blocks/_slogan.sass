@@ -1,5 +1,6 @@
 .slogan
   position: relative
+  margin-bottom: 200px
   &::before
     content: ''
     position: absolute
@@ -32,6 +33,10 @@
       font-size: 13px
       background-color: transparent
       border: 2px solid #2bed34
+      &:hover
+        background-color: $color-active
+      &:active
+        border-color: #18871e
 @media (max-width: 767.98px)
   .slogan
     &__title
