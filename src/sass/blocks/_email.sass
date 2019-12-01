@@ -1,0 +1,28 @@
+.email
+  margin-bottom: 250px
+  &-wrap
+    +width
+    margin-left: auto
+  &__title
+    margin-bottom: 10px
+  &__link
+    font-size: 54px
+    +light
+    text-decoration: none
+    color: $color-green
+  &__subtitle
+    font-size: 16px
+    color: $color-menu
+@media (max-width: 767.98px)
+  .email
+    margin-bottom: 190px
+    &-wrap
+      max-width: 100%
+    &__link
+      font-size: 30px
+    &__subtitle
+      font-size: 14px
+@media (max-width: 575.98px)
+  .email
+    &__link
+      font-size: 20px
