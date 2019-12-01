@@ -53,3 +53,23 @@ body
   .section
     &-title
       font-size: 20px
+.input
+  padding-bottom: 10px
+  font-size: 13px
+  border: none
+  border-bottom: 1px solid #ececec
+  color: $color-menu
+  &__group
+    flex-basis: 45%
+    margin-bottom: 55px
+    &_long
+      flex-basis: 100%
+      margin-bottom: 65px
+@media (max-width: 575.98px)
+  .input
+    &__group
+      width: 100%
+      margin-bottom: 45px
+      &_long
+        width: 100%
+        margin-bottom: 30px
