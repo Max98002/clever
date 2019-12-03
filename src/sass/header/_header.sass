@@ -14,19 +14,29 @@
     display: none
     padding: 5px 0
     cursor: pointer
+    transition: all .2s
     &__line
       display: block
       margin-bottom: 7px
       width: 14px
       height: 1px
       background-color: $color-text
+      transition: all .2s
       &::after
        content: ''
        display: block
        transform: translateY(7px)
        width: 50%
        height: 1px
-       background-color: $color-text 
+       background-color: $color-text
+       transition: all .2s
+      &_active
+        transform: rotate(55deg)
+        transition: all .2s
+        &::after
+          width: 100%
+          transition: all .2s
+          transform: rotate(70deg)
   &__logo
     width: 150px
   &-block
