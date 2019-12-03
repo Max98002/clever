@@ -107,6 +107,15 @@
       width: 100%
       &:focus
         border-color: $color-green
+    &__button
+      margin-top: 30px
+      color: #ffffff
+      border: none
+      font-size: 13px
+      &:hover
+        background-color: darken(desaturate(adjust-hue($color-green, -1), 0.58), 5.69)
+      &:active
+        background-color: $color-active
 .checkbox__group
   margin-right: 15px
   margin-bottom: 15px
