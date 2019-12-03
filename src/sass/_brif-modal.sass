@@ -8,10 +8,11 @@
   background-color: $color-white
   overflow-y: scroll
   transition: all .5s
-  transform: scaleY(0)
-  transform-origin: bottom
+  transform: translateY(-100%)
+  // transform: scaleY(0)
+  // transform-origin: bottom
   &_active
-    transform: scale(1)
+    transform: translateY(0) 
   &-header
     margin-bottom: 70px
     padding-top: 80px
