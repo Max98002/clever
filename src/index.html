@@ -36,7 +36,7 @@
         </ul>
       </nav>
       <div class="header-menu__block">
-        <button class="button header-menu__brif">Заполнить бриф</button>
+        <button class="button header-menu__brif brif">Заполнить бриф</button>
         <button class="button header-menu__contactUs">Свяжитесь с нами</button>
       </div>
       <!-- /.header-block -->
@@ -50,7 +50,7 @@
     </div>
     <!-- /.header__logo -->
     <div class="header-block">
-      <button class="button header-block__brif">Заполнить бриф</button>
+      <button class="button header-block__brif brif">Заполнить бриф</button>
       <button class="button header-block__contactUs">Свяжитесь с нами</button>
     </div>
     <!-- /.header-block -->
@@ -317,6 +317,91 @@
       </li>
     </ul>
   </nav>
+  <!-- nav -->
+  <!-- brif-modal -->
+  <div class="modal">
+    <div class="modal-header">
+      <div class="modal-wrap wrap">
+        <div class="modal-header__title">Бриф</div>
+        <!-- /.modal-header__title -->
+        <div class="modal-header__close"><img src="./img/close.png" alt="Close"></div>
+        <!-- /.modal-header__close -->
+      </div>
+    </div>
+    <!-- /.modal-header -->
+    <div class="modal-main wrap">
+      <p class="modal-main__text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+        est laborum.
+      </p>
+      <form action="#" class="form modal-form">
+        <h3 class="modal-main__title">Общяя информация</h3>
+        <div class="modal__group">
+          <input type="text" class="input modal-form__input" placeholder="Название компании">
+        </div>
+        <!-- /.modal__group -->
+        <div class="modal__group">
+          <input type="text" class="input modal-form__input" placeholder="Контактное лицо">
+        </div>
+        <!-- /.modal__group -->
+        <div class="modal__group">
+          <input type="text" class="input modal-form__input" placeholder="Email">
+        </div>
+        <!-- /.modal__group -->
+        <h3 class="modal-main__title">Технические хотелки</h3>
+        <span class="modal-main__subtitle">Что вас больше всего интересует?</span>
+        <div class="modal-main__chekboxWrap">
+          <div class="checkbox__group">
+            <input id="seo" type="checkbox" class="modal-main__checkbox">
+            <label for="seo" class="modal-main__label">SEO - анализ</label>
+          </div>
+          <!-- /.checkbox__group -->
+          <div class="checkbox__group">
+            <input id="ux" type="checkbox" class="modal-main__checkbox">
+            <label for="ux" class="modal-main__label">UX design</label>
+          </div>
+          <!-- /.checkbox__group -->
+          <div class="checkbox__group">
+            <input id="page" type="checkbox" class="modal-main__checkbox">
+            <label for="page" class="modal-main__label">Landing page</label>
+          </div>
+          <!-- /.checkbox__group -->
+          <div class="checkbox__group">
+            <input id="site" type="checkbox" class="modal-main__checkbox">
+            <label for="site" class="modal-main__label">Сайт под-ключ</label>
+          </div>
+          <!-- /.checkbox__group -->
+          <div class="checkbox__group">
+            <input id="design" type="checkbox" class="modal-main__checkbox">
+            <label for="design" class="modal-main__label">UX / UI design</label>
+          </div>
+          <!-- /.checkbox__group -->
+        </div>
+        <h3 class="modal-main__title">Ваш бюджет</h3>
+        <div class="modal-main__checkboxSuma">
+          <div class="suma__group">
+            <input id="do1000" type="checkbox" class="modal-main__name">
+            <label for="do1000" class="modal-main__price">до 1 000$</label>
+          </div>
+          <div class="suma__group">
+            <input id="do2000" type="checkbox" class="modal-main__name">
+            <label for="do2000" class="modal-main__price">1 000$ - 2 000$</label>
+          </div>
+          <div class="suma__group">
+            <input id="ov2000" type="checkbox" class="modal-main__name">
+            <label for="ov2000" class="modal-main__price">больше 2 000$</label>
+          </div>
+        </div>
+        <!-- /.modal-main__suma -->
+      </form>
+      <!-- /.form modal-main__form -->
+    </div>
+    <!-- /.modal-main wrap -->
+  </div>
+  <!-- /.modal -->
   <!-- jquery-3 -->
   <script src="./js/jquery-3.4.1.min.js"></script>
   <!-- jquery-3 -->
