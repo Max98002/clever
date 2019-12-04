@@ -20,4 +20,11 @@ $(document).ready(function () {
   header_btn.on('click', () => {
     $('.header-btn__line').toggleClass('header-btn__line_active');
   })
+
+  $(".owl-carousel").owlCarousel({
+    loop:true,
+    items: 1,
+    center: true
+  });
+
 });

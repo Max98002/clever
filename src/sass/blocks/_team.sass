@@ -8,13 +8,14 @@
     display: flex
     justify-content: flex-start
     align-items: flex-start
+    margin-left: 1px
     &__image
       min-width: 200px
       margin-right: 50px
       &_l
-        display: block
+        display: block !important
       &_s
-        display: none
+        display: none !important
     &__title
       margin: 0
       margin-bottom: 6px
@@ -30,6 +31,7 @@
       max-width: 570px
       font-size: 16px
     &__play
+      max-width: 14px
       margin-right: 12px
     &__videoReviews
       display: flex
@@ -42,6 +44,7 @@
     position: absolute
     bottom: 0
     right: 0
+    z-index: 9999999
     &__left
       cursor: pointer
       margin-right: 50px
@@ -70,10 +73,10 @@
         margin-right: 0
         width: 100%
         &_l
-          display: none
+          display: none !important
         &_s
-          display: block
-          width: 100%
+          display: block !important
+          width: 100% !important
 @media (max-width: 767.98px)
   .team
     margin-bottom: 160px
