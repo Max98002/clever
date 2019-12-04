@@ -22,9 +22,20 @@ $(document).ready(function () {
   })
 
   $(".owl-carousel").owlCarousel({
-    loop:true,
+    loop: true,
     items: 1,
-    center: true
+    center: true,
+    dots: false,
   });
+
+  var owl = $('.owl-carousel');
+  owl.owlCarousel();
+  $('.team-arrow__left').click(function () {
+    owl.trigger('next.owl.carousel');
+  })
+  $('.team-arrow__right').click(function () {
+    owl.trigger('prev.owl.carousel');
+  })
+
 
 });
