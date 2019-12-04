@@ -41,7 +41,7 @@ $(document).ready(function () {
   $("a[href^='#']").click(function () {
     event.preventDefault();
     var _href = $(this).attr("href");
-    $("html, body").animate({ scrollTop: $(_href).offset().top+ -200 + "px" }, 800);
+    $("html, body").animate({ scrollTop: $(_href).offset().top+ -180 + "px" }, 800);
     return false;
   });
   // Прокрутка До секцій

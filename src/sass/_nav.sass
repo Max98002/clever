@@ -28,7 +28,7 @@
         background-color: $color-text
         transform: scale(0)
         transition: all .2s
-      &:hover
+      &:focus
         color: $color-text
         +reg
         &::before
@@ -41,12 +41,15 @@
     padding-left: calc(50vw - 270px)
 @media (min-width: 767.98px)
   .nav
+    top: 190px
     padding-left: calc(50vw - 360px)
 @media (min-width: 991.98px)
   .nav
+    top: 200px
     padding-left: calc(50vw - 480px)
 @media (min-width: 1199.98px)
   .nav
+    top: 240px
     padding-left: calc(50vw - 590px)
     
         
