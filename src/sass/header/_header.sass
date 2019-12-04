@@ -40,6 +40,8 @@
   &__logo
     width: 150px
   &-block
+    display: flex
+    align-items: center
     &__brif
       margin-right: 20px
       font-size: 13px
@@ -52,9 +54,16 @@
         color: #ececec
         background-color: #080808
     &__contactUs
+      display: inline-block
+      width: 176px
+      max-width: 176px
+      text-align: center
+      height: 48px
+      line-height: 48px
       font-size: 13px
       color: $color-white
       border: none
+      text-decoration: none
       &:hover
         background-color: darken(desaturate(adjust-hue($color-green, -1), 0.58), 5.69)
       &:active
@@ -87,6 +96,10 @@
       font-size: 13px
       background-color: $color-white
       border: 1px solid #ececec
+      text-align: center
+      text-decoration: none
+      color: #000000
+      line-height: 48px
 @media (max-width: 767.98px)
   .header
     &-menu
