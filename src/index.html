@@ -260,14 +260,14 @@
       <h2 class="section-title plan__title">Свяжитесь с нами</h2>
       <!-- section-title plan__title -->
       <div class="contact-wrap">
-        <form action="#" class="form contact-form">
+        <form action="#" class="form contact-form" method="POST" id="form-contact">
           <div class="contact-form__row">
             <div class="input__group">
-              <input type="text" class="input contact-form__input" placeholder="Имя">
+              <input type="text" name="username" class="input contact-form__input" placeholder="Имя">
             </div>
             <!-- /.input__group -->
             <div class="input__group">
-              <input type="text" class="input contact-form__input" placeholder="Email">
+              <input type="text" name="email" class="input contact-form__input" placeholder="Email">
             </div>
             <!-- /.input__group -->
           </div>
@@ -279,7 +279,7 @@
             <!-- /.textarea__group -->
           </div>
           <!-- /.row -->
-          <button class="button contact-form__button" method="POST">Отправить</button>
+          <button class="button contact-form__button" type="submit">Отправить</button>
         </form>
         <!-- /.form contact-form -->
       </div>
@@ -367,18 +367,18 @@
         pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
         est laborum.
       </p>
-      <form action="#" class="form modal-form">
+      <form action="#" class="form modal-form" method="POST">
         <h3 class="modal-main__title">Общяя информация</h3>
         <div class="modal__group">
-          <input type="text" class="input modal-form__input" placeholder="Название компании">
+          <input type="text" name="namecompany" class="input modal-form__input" placeholder="Название компании">
         </div>
         <!-- /.modal__group -->
         <div class="modal__group">
-          <input type="text" class="input modal-form__input" placeholder="Контактное лицо">
+          <input type="text" name="username" class="input modal-form__input" placeholder="Контактное лицо">
         </div>
         <!-- /.modal__group -->
         <div class="modal__group">
-          <input type="text" class="input modal-form__input" placeholder="Email">
+          <input type="text" name="email" class="input modal-form__input" placeholder="Email">
         </div>
         <!-- /.modal__group -->
         <h3 class="modal-main__title">Технические хотелки</h3>
@@ -426,7 +426,7 @@
           </div>
         </div>
         <!-- /.modal-main__suma -->
-        <button class="button modal-form__button">Отправить бриф</button>
+        <button class="button modal-form__button" type="submit">Отправить бриф</button>
       </form>
       <!-- /.form modal-main__form -->
     </div>
@@ -437,6 +437,9 @@
   <script src="./js/jquery-3.4.1.min.js"></script>
   <!-- jquery-3 -->
   <script src="./js/owl.carousel.min.js"></script>
+  <!-- jQueryValidator -->
+  <script src="./js/jquery.validate.min.js"></script>
+  <!-- jQueryValidator -->
   <!-- main -->
   <script src="./js/main.js"></script>
   <!-- main -->

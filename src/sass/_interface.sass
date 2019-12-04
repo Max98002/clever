@@ -60,11 +60,19 @@ body
   border-bottom: 1px solid #ececec
   color: $color-menu
   &__group
+    position: relative
     flex-basis: 45%
     margin-bottom: 55px
     &_long
       flex-basis: 100%
       margin-bottom: 65px
+.error
+  border-color: red 
+div.error
+  position: absolute
+  right: 0
+  color: red
+  font-size: 10px
 @media (max-width: 575.98px)
   .input
     &__group
