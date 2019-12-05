@@ -1,0 +1,27 @@
+{
+  "name": "clever",
+  "version": "1.0.0",
+  "description": "Разработка, продижение, сопровождение сайтов.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Max98002/clever.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Max98002/clever/issues"
+  },
+  "homepage": "https://github.com/Max98002/clever#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-jsmin": "^0.1.5",
+    "gulp-tinify": "^1.0.2"
+  },
+  "dependencies": {
+    "gulp-htmlmin": "^5.0.1"
+  }
+}
